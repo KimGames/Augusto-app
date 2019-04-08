@@ -23,15 +23,31 @@
  * Escrito por Kim Ruan <kimr@kyros.com.br>, Abril 2018
  */
 
-import React, { Component } from 'react';
-import { Platform } from 'react-native';
-import { Routes } from "./Routes";
+import React, {Component} from 'react';
+import {Platform, View} from 'react-native';
 
-export default class App extends Component {
+export class HomePage extends Component {
 
-  render() {
-    return (
-      <Routes />
-    );
-  }
+    _isMounted = false;
+
+    constructor(props) {
+        super(props);
+
+        this.state = {};
+    }
+
+    componentDidMount(): void {
+        this._isMounted = true;
+    }
+
+    componentWillUnmount(): void {
+        this._isMounted = false;
+    }
+
+    render(): * {
+        return (
+            <View>
+            </View>
+        );
+    }
 }
