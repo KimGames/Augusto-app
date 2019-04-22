@@ -53,39 +53,21 @@ export class TopMenu extends Component {
     }
 
     renderMiddleComponent(): * {
-        let activityScreen = (
-            <View style={styles.activityView}>
-                <View style={styles.daySquad}>
-                    <Text style={styles.dayText}>{ TopMenu.getDate('Day') }</Text>
-                </View>
-                <Text style={styles.monthText}>{ TopMenu.getDate('Month') }</Text>
-            </View>
-        );
-        let perfilScreen = (
-            <View style={ styles.title }>
-                <Text style={ styles.titleText }>{ this.props.userName }</Text>
-            </View>
-        );
-        let rankingScreen = (
-            <View style={ styles.title }>
-                <Text style={ styles.titleText }>Ranking</Text>
-            </View>
-        );
-        let productivityScreen = (
+        let homeScreen = (
             <View style={ styles.title }>
                 <Text style={ styles.titleText }>Ranking</Text>
             </View>
         );
 
         switch (this.props.Screen) {
-            case 'Activity':
-                return activityScreen;
+            case 'Home':
+                return homeScreen;
 
             case 'Perfil':
-                return perfilScreen;
+                return homeScreen;
 
             case 'Ranking':
-                return rankingScreen;
+                return homeScreen;
         }
     }
 

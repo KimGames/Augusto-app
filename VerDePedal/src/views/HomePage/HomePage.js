@@ -25,6 +25,7 @@
 
 import React, {Component} from 'react';
 import {Platform, View} from 'react-native';
+import {TopMenu} from "../../components/TopMenu";
 
 export class HomePage extends Component {
 
@@ -47,6 +48,7 @@ export class HomePage extends Component {
     render(): * {
         return (
             <View>
+                <TopMenu Screen={ 'Home' }/>
             </View>
         );
     }
