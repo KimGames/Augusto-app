@@ -24,7 +24,7 @@
  */
 
 import React, {Component} from 'react';
-import {Platform, View} from 'react-native';
+import {Platform, View, ScrollView, Image, Text} from 'react-native';
 import {TopMenu} from "../../components/TopMenu";
 
 export class HomePage extends Component {
@@ -47,9 +47,69 @@ export class HomePage extends Component {
 
     render(): * {
         return (
-            <View>
+            <ScrollView style={{flex: 1, backgroundColor: 'white', flexDirection: 'column'}}>
                 <TopMenu Screen={ 'Home' }/>
-            </View>
+
+                <View style={{padding: 40, flexDirection: 'row'}}>
+                    <View style={{flex: 1}}>
+                        <Image
+                            style={{width: 100, height: 100}}
+                            source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
+                        />
+                        <Text>Trilhas</Text>
+                    </View>
+
+                    <View style={{width: 60}}/>
+
+                    <View style={{flex: 1}}>
+                        <Image
+                            style={{width: 100, height: 100}}
+                            source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
+                        />
+                        <Text>Bike Fit</Text>
+                    </View>
+                </View>
+
+                <View style={{padding: 40, flexDirection: 'row'}}>
+                    <View style={{flex: 1}}>
+                        <Image
+                            style={{width: 100, height: 100}}
+                            source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
+                        />
+                        <Text>My Bike</Text>
+                    </View>
+
+                    <View style={{width: 60}}/>
+
+                    <View style={{flex: 1}}>
+                        <Image
+                            style={{width: 100, height: 100}}
+                            source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
+                        />
+                        <Text>Emergência</Text>
+                    </View>
+                </View>
+
+                <View style={{padding: 40, flexDirection: 'row'}}>
+                    <View style={{flex: 1}}>
+                        <Image
+                            style={{width: 100, height: 100}}
+                            source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
+                        />
+                        <Text>Perfil</Text>
+                    </View>
+
+                    <View style={{width: 60}}/>
+
+                    <View style={{flex: 1}}>
+                        <Image
+                            style={{width: 100, height: 100}}
+                            source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
+                        />
+                        <Text>Favoritos</Text>
+                    </View>
+                </View>
+            </ScrollView>
         );
     }
 }

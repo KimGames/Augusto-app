@@ -27,6 +27,7 @@ import React, { Component } from 'react';
 import { Platform, View } from 'react-native';
 import { Router, Scene, Drawer } from 'react-native-router-flux';
 import {HomePage} from "./views/HomePage/HomePage";
+import {TrilhaPage} from "./views/TrilhasPage/TrilhaPage";
 
 export class Routes extends Component {
 
@@ -54,6 +55,15 @@ export class Routes extends Component {
                         key={ 'homepage' }
                         component={ HomePage }
                         title={ 'Home' }
+                        hideNavBar={ true }
+                        initial={ false }
+                    />
+
+                    <Scene
+                        key={ 'homepage' }
+                        component={ TrilhaPage }
+                        title={ 'Trilhas' }
+                        hideNavBar={ true }
                         initial={ true }
                     />
                     {/*<Drawer

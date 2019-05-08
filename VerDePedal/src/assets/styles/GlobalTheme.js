@@ -39,6 +39,7 @@ export const Colors = {
     Yellow        : '#FFF41F',
     Activity      : '#BBDAFF',
     Obfuscated    : '#F5FCFF',
+    TopMenuColor  : '#6D6571',
 };
 
 export const Fonts = {

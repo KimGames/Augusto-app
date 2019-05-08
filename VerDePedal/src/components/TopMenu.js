@@ -53,22 +53,11 @@ export class TopMenu extends Component {
     }
 
     renderMiddleComponent(): * {
-        let homeScreen = (
+        return (
             <View style={ styles.title }>
-                <Text style={ styles.titleText }>Ranking</Text>
+                <Text style={ styles.titleText }>{ this.props.Screen }</Text>
             </View>
         );
-
-        switch (this.props.Screen) {
-            case 'Home':
-                return homeScreen;
-
-            case 'Perfil':
-                return homeScreen;
-
-            case 'Ranking':
-                return homeScreen;
-        }
     }
 
     render(): * {

@@ -30,10 +30,10 @@ export const styles = StyleSheet.create({
     menuView: {
         flex: 0.1,
         flexDirection   : 'row',
-        backgroundColor : 'transparent',
+        backgroundColor : Colors.TopMenuColor,
         height          : 50,
         width           : width,
-        marginTop       : Platform.OS === 'ios' ? 30 : 5
+        marginTop       : Platform.OS === 'ios' ? 30 : 0
     },
     menuButton: {
         alignItems     : 'flex-start',
@@ -52,7 +52,7 @@ export const styles = StyleSheet.create({
         marginTop  : 10
     },
     titleText: {
-        fontSize : 20,
+        fontSize : 25,
         color    : 'white'
     },
 });
